@@ -1,3 +1,5 @@
+name: Flutter Package for Linux
+
 on:
   push:
     branches: [ "main" ]
