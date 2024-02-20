@@ -10,13 +10,13 @@ jobs:
  build:
    runs-on: macos-latest
    steps:
-     - uses: actions/checkout@v4
+     - uses: actions/checkout@v2
      - uses: subosito/flutter-action@v2
        with:
          channel: 'stable'
      - run: flutter build macos
 
-     - uses: actions/upload-artifact@v3
+     - uses: actions/upload-artifact@v2
        with:
-        name: CrossDrop for Linux
-        path: build/*
+        name: CrossDrop for MacOS
+        path: build/macos/Build/Products/Release/*.app
